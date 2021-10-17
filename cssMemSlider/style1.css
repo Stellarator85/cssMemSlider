@@ -5,7 +5,7 @@ body {
 
 main {
   background-color: #222;
-  width: 1280px;
+  width: 1920px;
   max-width: 99%;
   display: flex;
   flex-direction: column;
@@ -37,18 +37,6 @@ main {
   background-image: url(Assets/1.gif); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
-}
-
-.Input2 {
-  position: relative;
-}
-
-.Input3 {
-  position: relative;
-}
-
-.Input4 {
-  position: relative;
 }
 
 @keyframes slidein {
@@ -125,7 +113,7 @@ img {
   color: white;
   font-size: 1.7rem;
   height: 4%;
-  margin-bottom: 6%;
+  margin-bottom: 3.7%;
   left: 4%;
   position: absolute;
   display: none;
@@ -134,9 +122,10 @@ img {
 .Text-block2 {
   font-family: Arial, Helvetica;
   color: white;
+
   font-size: 1.7rem;
   height: 4%;
-  margin-bottom: 6%;
+  margin-bottom: 3.7%;
   left: 4%;
   position: absolute;
   display: none;
@@ -147,7 +136,7 @@ img {
   color: white;
   font-size: 1.7rem;
   height: 4%;
-  margin-bottom: 6%;
+  margin-bottom: 3.7%;
   left: 4%;
   position: absolute;
   display: none;
@@ -158,44 +147,37 @@ img {
   color: white;
   font-size: 1.7rem;
   height: 4%;
-  margin-bottom: 6%;
+  margin-bottom: 3.7%;
   left: 4%;
   position: absolute;
   display: none;
 }
 
-fff {
-  -ms-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.fff1 {
-  margin-bottom: 6%;
+.Input1 {
+  margin-bottom: 4.75%;
   left: 86.7%;
   position: absolute;
 }
 
-.fff2 {
-  margin-bottom: 6%;
+.Input2 {
+  margin-bottom: 4.75%;
   left: 88.7%;
   position: absolute;
 }
 
-.fff3 {
-  margin-bottom: 6%;
+.Input3 {
+  margin-bottom: 4.75%;
   left: 90.7%;
   position: absolute;
 }
 
-.fff4 {
-  margin-bottom: 6%;
+.Input4 {
+  margin-bottom: 4.75%;
   left: 92.7%;
   position: absolute;
 }
 
-.fff1:checked ~ .Image_1 {
+.Input1:checked ~ .Image_1 {
   display: inline;
 
   animation-duration: 0.3s;
@@ -203,22 +185,7 @@ fff {
   animation-name: slideinn;
   z-index: 5;
 }
-.fff1:checked ~ .Text-block1 {
-  display: inline;
-  animation-duration: 0.3s;
-  animation-delay: 0s;
-  animation-name: slideinnn;
-  z-index: 5;
-}
-
-.fff2:checked ~ .Image_2 {
-  display: inline;
-  animation-duration: 0.3s;
-  animation-name: slideinn;
-  z-index: 5;
-}
-
-.fff2:checked ~ .Text-block2 {
+.Input1:checked ~ .Text-block1 {
   display: inline;
   animation-duration: 0.3s;
   animation-delay: 0s;
@@ -226,14 +193,14 @@ fff {
   z-index: 5;
 }
 
-.fff3:checked ~ .Image_3 {
+.Input2:checked ~ .Image_2 {
   display: inline;
   animation-duration: 0.3s;
   animation-name: slideinn;
   z-index: 5;
 }
 
-.fff3:checked ~ .Text-block3 {
+.Input2:checked ~ .Text-block2 {
   display: inline;
   animation-duration: 0.3s;
   animation-delay: 0s;
@@ -241,14 +208,29 @@ fff {
   z-index: 5;
 }
 
-.fff4:checked ~ .Image_4 {
+.Input3:checked ~ .Image_3 {
   display: inline;
   animation-duration: 0.3s;
   animation-name: slideinn;
   z-index: 5;
 }
 
-.fff4:checked ~ .Text-block4 {
+.Input3:checked ~ .Text-block3 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-name: slideinnn;
+  z-index: 5;
+}
+
+.Input4:checked ~ .Image_4 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-name: slideinn;
+  z-index: 5;
+}
+
+.Input4:checked ~ .Text-block4 {
   display: inline;
   animation-duration: 0.3s;
   animation-delay: 0s;
@@ -267,25 +249,20 @@ fff {
 */
 @keyframes slideinn {
   from {
-    position: absolute;
     width: 70%;
   }
 
   to {
-    position: absolute;
-    height: 60%;
     width: 90%;
   }
 }
 
 @keyframes slideinnn {
   from {
-    font-size: 0.7rem;
     left: 30%;
   }
 
   to {
-    font-size: 1.7rem;
     left: 4%;
   }
 }
@@ -317,7 +294,7 @@ input {
 }
 
 input:hover {
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 
   background-color: white;
   cursor: pointer;
@@ -331,4 +308,81 @@ input:checked {
 input:checked:hover {
   border: solid 2px white;
   transition: ease-in-out;
+}
+
+@media (max-width: 320px) {
+  .Text-block1,
+  .Text-block2,
+  .Text-block3,
+  .Text-block4 {
+    font-size: 0.8rem;
+    height: 4%;
+    margin-bottom: 3%;
+    left: 4%;
+    letter-spacing: 0.05rem;
+  }
+  .image-display {
+    height: 55vh;
+  }
+  img {
+    height: 40%;
+  }
+  .Image_1,
+  .Image_2,
+  .Image_3,
+  .Image_4 {
+    margin-top: -21%;
+  }
+
+  input {
+    border: hidden;
+    background-color: rgb(20, 146, 204);
+    border-radius: 50%;
+    width: 2.5%;
+    height: 2%;
+  }
+
+  input:checked {
+    border: solid 1px rgb(20, 146, 204);
+  }
+  input:checked:hover {
+    border: solid 1px white;
+  }
+
+  .Input1 {
+    margin-bottom: 13%;
+    left: 40%;
+    position: absolute;
+  }
+
+  .Input2 {
+    margin-bottom: 13%;
+    left: 44%;
+    position: absolute;
+  }
+
+  .Input3 {
+    margin-bottom: 13%;
+    left: 48%;
+    position: absolute;
+  }
+
+  .Input4 {
+    margin-bottom: 13%;
+    left: 52%;
+    position: absolute;
+  }
+
+  @keyframes slideinn {
+    from {
+      position: absolute;
+      width: 70%;
+    }
+
+    to {
+      position: absolute;
+
+      width: 90%;
+    }
+  }
 }

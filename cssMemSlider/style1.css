@@ -1,0 +1,334 @@
+body {
+  margin: 0 auto;
+  background-color: #222;
+}
+
+main {
+  background-color: #222;
+  width: 1280px;
+  max-width: 99%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 2.5%;
+}
+
+.image-display {
+  width: 90%;
+  height: 75vh;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+
+  gap: 4%;
+  overflow: hidden;
+}
+
+.Slide-display {
+  width: 100%;
+  height: 100%;
+  border-radius: 3%; /*
+  background-image: url(Assets/1.gif); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.Input2 {
+  position: relative;
+}
+
+.Input3 {
+  position: relative;
+}
+
+.Input4 {
+  position: relative;
+}
+
+@keyframes slidein {
+  from {
+    background-size: 0% 100%;
+  }
+  to {
+    background-size: 100% 100%;
+    background-image: url(Assets/2.gif);
+  }
+}
+
+@keyframes slideout {
+  from {
+    background-size: 100% 100%;
+  }
+  to {
+    background-size: 0% 100%;
+    background-image: url(Assets/2.gif);
+  }
+}
+
+img {
+  width: 90%;
+  height: 60%;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+.Image_1 {
+  margin-top: -9.3%;
+
+  position: absolute;
+  z-index: auto;
+  overflow: hidden;
+}
+
+.Image_2 {
+  margin-top: -9.3%;
+
+  position: absolute;
+  z-index: auto;
+  overflow: hidden;
+}
+.Image_3 {
+  margin-top: -9.3%;
+
+  position: absolute;
+  z-index: auto;
+  overflow: hidden;
+}
+
+.Image_4 {
+  margin-top: -9.3%;
+
+  z-index: auto;
+  position: absolute;
+  overflow: hidden;
+}
+
+.Text-bullets-container {
+  position: relative;
+
+  border: 2px green solid;
+  width: 95%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.Text-block1 {
+  font-family: Arial, Helvetica;
+  color: white;
+  font-size: 1.7rem;
+  height: 4%;
+  margin-bottom: 6%;
+  left: 4%;
+  position: absolute;
+  display: none;
+}
+
+.Text-block2 {
+  font-family: Arial, Helvetica;
+  color: white;
+  font-size: 1.7rem;
+  height: 4%;
+  margin-bottom: 6%;
+  left: 4%;
+  position: absolute;
+  display: none;
+}
+
+.Text-block3 {
+  font-family: Arial, Helvetica;
+  color: white;
+  font-size: 1.7rem;
+  height: 4%;
+  margin-bottom: 6%;
+  left: 4%;
+  position: absolute;
+  display: none;
+}
+
+.Text-block4 {
+  font-family: Arial, Helvetica;
+  color: white;
+  font-size: 1.7rem;
+  height: 4%;
+  margin-bottom: 6%;
+  left: 4%;
+  position: absolute;
+  display: none;
+}
+
+fff {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.fff1 {
+  margin-bottom: 6%;
+  left: 86.7%;
+  position: absolute;
+}
+
+.fff2 {
+  margin-bottom: 6%;
+  left: 88.7%;
+  position: absolute;
+}
+
+.fff3 {
+  margin-bottom: 6%;
+  left: 90.7%;
+  position: absolute;
+}
+
+.fff4 {
+  margin-bottom: 6%;
+  left: 92.7%;
+  position: absolute;
+}
+
+.fff1:checked ~ .Image_1 {
+  display: inline;
+
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-name: slideinn;
+  z-index: 5;
+}
+.fff1:checked ~ .Text-block1 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-name: slideinnn;
+  z-index: 5;
+}
+
+.fff2:checked ~ .Image_2 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-name: slideinn;
+  z-index: 5;
+}
+
+.fff2:checked ~ .Text-block2 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-name: slideinnn;
+  z-index: 5;
+}
+
+.fff3:checked ~ .Image_3 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-name: slideinn;
+  z-index: 5;
+}
+
+.fff3:checked ~ .Text-block3 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-name: slideinnn;
+  z-index: 5;
+}
+
+.fff4:checked ~ .Image_4 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-name: slideinn;
+  z-index: 5;
+}
+
+.fff4:checked ~ .Text-block4 {
+  display: inline;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
+  animation-name: slideinnn;
+  z-index: 5;
+}
+/*
+@keyframes slideout {
+  from {
+    margin-left: 31%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+*/
+@keyframes slideinn {
+  from {
+    position: absolute;
+    width: 70%;
+  }
+
+  to {
+    position: absolute;
+    height: 60%;
+    width: 90%;
+  }
+}
+
+@keyframes slideinnn {
+  from {
+    font-size: 0.7rem;
+    left: 30%;
+  }
+
+  to {
+    font-size: 1.7rem;
+    left: 4%;
+  }
+}
+
+.Bullets-section {
+  border: 2px red solid;
+  width: 11.5%;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+input {
+  border: hidden;
+  background-color: rgb(20, 146, 204);
+  border-radius: 50%;
+  width: 1%;
+  height: 2%;
+  transition: ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input:hover {
+  transition-duration: 1s;
+
+  background-color: white;
+  cursor: pointer;
+}
+
+input:checked {
+  border: solid 2px rgb(20, 146, 204);
+  background-color: #222;
+  transition: ease-in-out;
+}
+input:checked:hover {
+  border: solid 2px white;
+  transition: ease-in-out;
+}
